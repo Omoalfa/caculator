@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0%;
+}
+body {
+    background-image: url(./background.png);
+    
+}
+.wrapper {
+    background-color: rgba(20,50,20,0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+header {
+    font-size: 3rem;
+    font-family: monospace;
+    text-align: center;
+}
+.calc-body {
+    background-color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 400px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.calc-screen {
+    background-color: #888;
+    border: #444 solid 2px;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: chartreuse;
+    padding: 10px;
+}
+.input-screen {
+    color:rgb(119, 224, 100);
+    font-size: 2.5em;
+    font-family: monospace;
+    text-align: left;
+    transition: all .3s ease-in-out;
+}
+.input-screen.display-result {
+    font-size: 1em;
+}
+.result-screen {
+    color:rgb(119, 224, 100);
+    font-size: 2.5em !important;
+    font-family: monospace;
+    text-align: right !important;
+}
+.key-div ul {
+    background-color: transparent;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    height: 380px;
+}
+.keys {
+    width: 80px;
+    height: 60px;
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+.keys:hover {
+    cursor: pointer;
+    background-color: rgb(119, 224, 100) !important;
+    font-size: 1.5em !important;
+}
+.numbers {
+    background-color: rgb(8, 8, 8);
+}
+#equals {
+    background-color: chartreuse;
+}
+#clear {
+    background-color: red;
+}
+#delete {
+    background-color: maroon;
+}
+.keypress {
+    transform: scale(1.1);
+    border-color: #2bff00;
+    box-shadow: 0 0 1rem #2bff00;
+  }

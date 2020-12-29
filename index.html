@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>Just A Simple Calculator</header>
+        <div class="calc-body">
+            <div class="calc-screen">
+                <div class="input-screen">33</div>
+                <div class="result-screen"></div>
+            </div>
+            <div class="key-div">
+                <ul>
+                    <li class="keys" data-key="">AC</li>
+                    <li class="keys operator" id="power">X<sup>y</sup></li>
+                    <li class="keys operator" id="factorial" data-key="33">X!</li>
+                    <li class="keys" data-key="delete"><i class="fas backspace"></i></li>
+                    <li class="keys numbers" data-key="55">7</li>
+                    <li class="keys numbers" data-key="56">8</li>
+                    <li class="keys numbers" data-key="57">9</li>
+                    <li class="keys operator add" data-key="43">+</li>
+                    <li class="keys numbers" data-key="52">4</li>
+                    <li class="keys numbers" data-key="53">5</li>
+                    <li class="keys numbers" data-key="54">6</li>
+                    <li class="keys operator" id="minus" data-key="45">-</li>
+                    <li class="keys numbers" data-key="49">1</li>
+                    <li class="keys numbers" data-key="50">2</li>
+                    <li class="keys numbers" data-key="51">3</li>
+                    <li class="keys operator" id="product" data-key="42">*</li>
+                    <li class="keys numbers" id="dot" data-key="46">.</li>
+                    <li class="keys numbers" id="zero" data-key="48">0</li>
+                    <li class="keys" id="equals" data-key="13">=</li>
+                    <li class="keys operator" id="divide" data-key="47">/</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
